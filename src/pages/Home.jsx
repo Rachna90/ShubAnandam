@@ -1,6 +1,6 @@
 import React from 'react'
 import Accordion from '../components/Accordion'
-import chairImage from '../assets/images/chair.png'
+import chairImage from '/images/chair.png'
 import PSlide from '../components/PSlide'
 import Gmap from '../components/Gmap'
 
