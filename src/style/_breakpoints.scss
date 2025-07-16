@@ -1,0 +1,25 @@
+// _mixins.scss or _breakpoints.scss
+
+$breakpoints: (
+  'xs': 480px,
+  'sm': 640px,
+  'md': 768px,
+  'lg': 1024px,
+  'xl': 1280px,
+  '2xl': 1536px,
+);
+
+
+// Responsive mixin
+
+@mixin respond($breakpoint){
+  $size: map-get($breakpoints, $breakpoint );
+  @if $size{
+    @media (min-width:#{$size}) {
+      @content;
+    }
+  }@else{
+    @warn "Breakpoint '#{$breakpoints} not found.'";
+  }
+}
+

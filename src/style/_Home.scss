@@ -1,0 +1,97 @@
+@import '../style/breakpoints';
+.heroImage {
+  background-image: url(../assets/images/bg1.png);
+  background-size: cover;
+  background-position: top center;
+ 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+ height: 100vh;
+  z-index: 10;
+  color: #fff;
+
+  @include respond(lg) {
+     padding-top: 140px;
+      
+  }
+}
+
+$my-gradient: linear-gradient(90deg, rgba(133, 36, 56, 1) 0%, rgba(31, 8, 13, 1) 100%);
+
+.primaryColor {
+  color: #852438;
+}
+
+.aboutSec,
+.enquireSec,
+.trust,
+footer {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.aboutSec {
+  background-image: url(../assets/images/aboutbg.png);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  
+  color: #fff;
+
+  @include respond(lg){
+height: 100vh;
+  }
+}
+
+.enquireSec {
+  background-image: url(../assets/images/contactbg.png);
+  display: flex;
+  justify-content: center;
+  
+  color: #fff;
+  @include respond(lg){
+height: 100vh;
+  }
+}
+
+.trust {
+  background-image: url(../assets/images/bg2.png);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer {
+  background-image: url(../assets/images/footer.png);
+}
+
+.map-wrap ul {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  .li-style {
+    background-color: #f2f2f2;
+    padding: 20px;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    gap: 20px;
+
+    i {
+      width: 60px;
+      height: 60px;
+      background-color: #fff;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}
