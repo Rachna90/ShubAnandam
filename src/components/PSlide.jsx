@@ -59,7 +59,7 @@ const PSlide = () => {
                 slidesPerView: 2,
               },
               1280: {
-                slidesPerView: 3,
+                slidesPerView: 2,
               },
             }}
             className="mb-[30px]"
