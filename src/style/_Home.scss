@@ -1,19 +1,20 @@
+
 .heroImage {
-  background-image: url(/public/images/bg1.png);
+  background-image: url(../assets/images/bg1.png);
   background-size: cover;
   background-position: top center;
-
+ 
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 100vh;
+ height: 100vh;
   z-index: 10;
   color: #fff;
 
-  @include respond(lg) {
-    padding-top: 140px;
-
-  }
+  // @include respond(lg) {
+  //    padding-top: 140px;
+      
+  // }
 }
 
 $my-gradient: linear-gradient(90deg, rgba(133, 36, 56, 1) 0%, rgba(31, 8, 13, 1) 100%);
@@ -31,33 +32,32 @@ footer {
 }
 
 .aboutSec {
-  background-image: url(/public/images/aboutbg.png);
+  background-image: url(../assets/images/aboutbg.png);
   display: flex;
   justify-content: center;
   align-items: center;
   text-align: center;
-
+  
   color: #fff;
 
-  @include respond(lg) {
-    height: 100vh;
-  }
+//   @include respond(lg){
+// height: 100vh;
+//   }
 }
 
 .enquireSec {
-  background-image: url(/public/images/contactbg.png);
+  background-image: url(../assets/images/contactbg.png);
   display: flex;
   justify-content: center;
-
+  
   color: #fff;
-
-  @include respond(lg) {
-    height: 100vh;
-  }
+//   @include respond(lg){
+// height: 100vh;
+//   }
 }
 
 .trust {
-  background-image: url(/public/images/bg2.png);
+  background-image: url(../assets/images/bg2.png);
   text-align: center;
   display: flex;
   justify-content: center;
@@ -65,8 +65,7 @@ footer {
 }
 
 footer {
-  background-image: url(/public/images/footer.png);
-  ;
+  background-image: url(../assets/images/footer.png);
 }
 
 .map-wrap ul {
