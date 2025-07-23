@@ -1,8 +1,7 @@
 import React, { useRef, useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
-
-// import pImg1 from '../assets/images/floorOne.jpg';
+import pImg1 from '../assets/images/floorOne.jpg';
 // import pImg2 from '../assets/images/floorTwo.jpg';
 // import pImg3 from '../assets/images/floorThree.jpg';
 
@@ -10,7 +9,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-// const projectImages = [pImg1, pImg2, pImg3];
+const projectImages = [pImg1];
 
 const PSlide = () => {
   const prevRef = useRef(null);
@@ -64,12 +63,12 @@ const PSlide = () => {
             }}
             className="mb-[30px]"
           >
-            {/* {projectImages.map((img, index) => (
+            {projectImages.map((img, index) => (
               <SwiperSlide key={index}>
                 <div className="bg-white shadow-md rounded-tl-[30px] rounded-tr-[30px]">
                   <div className="overflow-hidden rounded-tl-[30px] rounded-tr-[30px] cursor-pointer">
                     <img
-                      // src={img}
+                      src={img}
                       alt={`img-${index}`}
                       className="w-full rounded-tl-[30px] rounded-tr-[30px] transform transition-transform duration-500 hover:scale-110"
                     />
@@ -84,7 +83,7 @@ const PSlide = () => {
                   </div>
                 </div>
               </SwiperSlide>
-            ))} */}
+            ))}
           </Swiper>
         )}
 
