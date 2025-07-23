@@ -2,9 +2,9 @@ import React, { useRef, useEffect, useState } from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 
-import pImg1 from '../assets/images/floorOne.jpg';
-import pImg2 from '../assets/images/floorTwo.jpg';
-import pImg3 from '../assets/images/floorThree.jpg';
+// import pImg1 from '../assets/images/floorOne.jpg';
+// import pImg2 from '../assets/images/floorTwo.jpg';
+// import pImg3 from '../assets/images/floorThree.jpg';
 
 import 'swiper/css';
 import 'swiper/css/pagination';
@@ -69,7 +69,7 @@ const PSlide = () => {
                 <div className="bg-white shadow-md rounded-tl-[30px] rounded-tr-[30px]">
                   <div className="overflow-hidden rounded-tl-[30px] rounded-tr-[30px] cursor-pointer">
                     <img
-                      src={img}
+                      // src={img}
                       alt={`img-${index}`}
                       className="w-full rounded-tl-[30px] rounded-tr-[30px] transform transition-transform duration-500 hover:scale-110"
                     />
