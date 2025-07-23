@@ -10,7 +10,7 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 
-const projectImages = [pImg1, pImg2, pImg3];
+// const projectImages = [pImg1, pImg2, pImg3];
 
 const PSlide = () => {
   const prevRef = useRef(null);
@@ -64,7 +64,7 @@ const PSlide = () => {
             }}
             className="mb-[30px]"
           >
-            {projectImages.map((img, index) => (
+            {/* {projectImages.map((img, index) => (
               <SwiperSlide key={index}>
                 <div className="bg-white shadow-md rounded-tl-[30px] rounded-tr-[30px]">
                   <div className="overflow-hidden rounded-tl-[30px] rounded-tr-[30px] cursor-pointer">
@@ -84,7 +84,7 @@ const PSlide = () => {
                   </div>
                 </div>
               </SwiperSlide>
-            ))}
+            ))} */}
           </Swiper>
         )}
 
